@@ -29,4 +29,6 @@
 
 选择 `请求` 栏 `表单数据`，同样打开 `原始` 选项，复制全文，粘贴至粘贴至 `config.json` 中 `data` 字段
 
+![](imgs/request.png)
+
 运行 `auto-auth.py`
