@@ -22,14 +22,14 @@ while True:
         while True:
             print('failed! trying to reconnect')
 
-            headersLogin = {k: v for k, v in map(lambda x: x.split(': '), headersLoginTxt.split('\n')[1:])}
-
-            resp = requests.post(url, headers=headersLogin, data=data.encode('ascii'))
             try:
+                headersLogin = {k: v for k, v in map(lambda x: x.split(': '), headersLoginTxt.split('\n')[1:])}
+                resp = requests.post(url, headers=headersLogin, data=data.encode('ascii'))
                 print('reconnect', json.loads(resp.content)['result'])
                 break
             except:
                 print('reconnect failed')
+                print('***please see the document README.md, ***\n***make sure you have entered the required information appropriately.***')
             
             wait_time = 10+random.random() * 3
             print(f'retry in {wait_time} seconds...')
