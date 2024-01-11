@@ -24,7 +24,7 @@ while True:
 
             headersLogin = {k: v for k, v in map(lambda x: x.split(': '), headersLoginTxt.split('\n')[1:])}
 
-            resp = requests.post(url, headers=headersLogin, data=data.format(username='201910416135', pwd='12wyw...').encode('ascii'))
+            resp = requests.post(url, headers=headersLogin, data=data.encode('ascii'))
             try:
                 print('reconnect', json.loads(resp.content)['result'])
                 break
