@@ -3,6 +3,8 @@
 
 ## 使用方法
 
+### 手动启动
+
 使用浏览器打开认证页面
 
 ![](imgs/web-auth-page.png)
@@ -32,3 +34,21 @@
 ![](imgs/request.png)
 
 运行 `auto-auth.py`
+
+### 开机自动启动
+
+#### Linux
+
+```bash
+python register-service.py
+```
+
+## 配置文件
+
+`config.json` 中包含程序配置。
+
+`testInterval`：网络测试间隔；
+
+`testIntervalRandRange`：网络测试间隔随机范围；
+
+每次测试的间隔将在 $[testInterval-testIntervalRandRange, testInterval+testIntervalRandRange$ 范围内均匀随机取值。
