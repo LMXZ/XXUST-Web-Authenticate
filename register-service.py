@@ -25,5 +25,9 @@ try:
     os.system(f'sudo cp "{servicePath}/auto-auth.service" "/etc/systemd/system/"')
     os.system(f'sudo systemctl enable auto-auth.service')
     os.system(f'sudo systemctl daemon-reload')
+    os.system(f'sudo systemctl start auto-auth.service')
 except:
     print('register failed!')
+    exit()
+
+print('register succeed!')

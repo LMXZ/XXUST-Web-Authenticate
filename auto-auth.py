@@ -5,7 +5,7 @@ import random
 
 with open('./config.json', 'r') as file:
     config = json.load(file)
-    url, datam, testInterval, testIntervalRandRange = \
+    url, data, testInterval, testIntervalRandRange = \
         config['url'], config['data'], config['testInterval'], config['testIntervalRandRange']
     assert(testIntervalRandRange <= testInterval)
 
