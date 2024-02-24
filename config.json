@@ -1,6 +1,0 @@
-{
-    "url": "在此填入你复制到的 url",
-    "data": "在此填入你复制到的 请求体",
-    "testInterval": 60,
-    "testIntervalRandRange": 5
-}

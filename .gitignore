@@ -1,2 +1,4 @@
 service/auto-auth.service
 service/start-service.sh
+config.json
+headers.txt
