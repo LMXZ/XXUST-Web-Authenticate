@@ -25,7 +25,8 @@
 
 在 `消息头` 中的 `请求头` 栏中打开 `原始` 选项，复制全文，粘贴至 `headers.txt` 中
 
-复制第一行 POST 后面的内容，粘贴至 `config.json` 中 `url` 字段
+把第二行 Host: 后面的内容和第一行 POST 后面的内容拼在一起，填入 `config.json` 中 `url` 字段。
+例如图中所示的情况，`url` 字段应填入 `222.197.192.59:9090/zportal/login/do`
 
 ![](imgs/copy-header.png)
 
